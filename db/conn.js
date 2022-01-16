@@ -6,7 +6,7 @@ db: heroku_65908da8a2ffd8f
 mysql://b2168d5717ddfa:d2049979@us-cdbr-east-05.cleardb.net/heroku_65908da8a2ffd8f?reconnect=true*/
 const sequelize = new Sequelize(/* 'tougths' */'heroku_65908da8a2ffd8f', 'b2168d5717ddfa', 'd2049979', {
   host: 'us-cdbr-east-05.cleardb.net' /* 'localhost' */,
-  database: 'heroku_65908da8a2ffd8f', 
+  port: 3306,
   dialect: 'mysql',
 })
 
