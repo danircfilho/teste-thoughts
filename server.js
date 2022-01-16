@@ -50,7 +50,7 @@ app.use(
       secure: false,
       maxAge: 360000, //equivale a 01 dia
       expires: new Date(Date.now() + 360000),
-      httpOnly: true //em produção, para https deve-se mudar esta configuração (certificado de segurança)
+      httpOnly: false //em produção, para https deve-se mudar esta configuração (certificado de segurança)
     }
   })
 )
