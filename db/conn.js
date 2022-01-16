@@ -4,9 +4,10 @@ const { Sequelize } = require('sequelize')
 password: d2049979 
 db: heroku_65908da8a2ffd8f
 mysql://b2168d5717ddfa:d2049979@us-cdbr-east-05.cleardb.net/heroku_65908da8a2ffd8f?reconnect=true*/
-const sequelize = new Sequelize(/* 'tougths' */'heroku_65908da8a2ffd8f', 'b2168d5717ddfa', 'd2049979', {
-  host: 'us-cdbr-east-05.cleardb.net' /* 'localhost' */,
-  /* port: 3306, */
+
+const sequelize = new Sequelize('heroku_65908da8a2ffd8f', 'b2168d5717ddfa', 'd2049979', {
+  host: 'us-cdbr-east-05.cleardb.net',
+  port: 3000,
   dialect: 'mysql',
 })
 
