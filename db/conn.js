@@ -1,11 +1,14 @@
 const { Sequelize } = require('sequelize')
 
-/* user: b2168d5717ddfa
-password: d2049979 
-db: heroku_65908da8a2ffd8f
-mysql://b2168d5717ddfa:d2049979@us-cdbr-east-05.cleardb.net/heroku_65908da8a2ffd8f?reconnect=true*/
+/* user name: b53bbe6209fe6e
+password: e7335e84 
+db: heroku_4bc76cb70dc86b9
+hostname: us-cdbr-east-05.cleardb.net
+mysql://b53bbe6209fe6e:e7335e84@us-cdbr-east-05.cleardb.net/heroku_4bc76cb70dc86b9?reconnect=true*/
 
-const sequelize = new Sequelize(/* 'heroku_65908da8a2ffd8f', 'b2168d5717ddfa', 'd2049979' */ 'mysql://b2168d5717ddfa:d2049979@us-cdbr-east-05.cleardb.net/heroku_65908da8a2ffd8f?reconnect=true' , {
+/* 'heroku_65908da8a2ffd8f', 'b2168d5717ddfa', 'd2049979' */
+
+const sequelize = new Sequelize('mysql://b53bbe6209fe6e:e7335e84@us-cdbr-east-05.cleardb.net/heroku_4bc76cb70dc86b9?reconnect=true' , {
 /*   host: 'us-cdbr-east-05.cleardb.net',
   port: 3000,
   dialect: 'mysql', */
