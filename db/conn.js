@@ -11,7 +11,6 @@ mysql://b53bbe6209fe6e:e7335e84@us-cdbr-east-05.cleardb.net/heroku_4bc76cb70dc86
 
 const sequelize = new Sequelize('heroku_4bc76cb70dc86b9', 'b53bbe6209fe6e', 'e7335e84',{
   host: 'us-cdbr-east-05.cleardb.net',
-  /* port: 3306, */
   dialect: 'mysql'
 })
 
