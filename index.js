@@ -79,12 +79,13 @@ app.use('/', authRoutes)
 
 app.get('/', ToughtController.showTougths)
 
-const port = process.env.PORT || 3000
+//Heroku - Porta
+const PORT = process.env.PORT || 3000
 
 conn
-//.sync({force: true})
-.sync()
+.sync({force: true})
+//.sync()
 .then(() => {
-  app.listen(port)
+  app.listen(PORT)
 })
 .catch((err) => console.log(err))
