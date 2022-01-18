@@ -83,8 +83,8 @@ app.get('/', ToughtController.showTougths)
 const PORT = process.env.PORT || 3000
 
 conn
-.sync({force: true})
-//.sync()
+//.sync({force: true})
+.sync()
 .then(() => {
   app.listen(PORT)
 })
