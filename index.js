@@ -50,7 +50,7 @@ app.use(
       secure: false,
       maxAge: 360000, //equivale a 01 dia
       expires: new Date(Date.now() + 360000),
-      httpOnly: false //em produção, para https deve-se mudar esta configuração (certificado de segurança)
+      httpOnly: true //em produção, para https deve-se mudar esta configuração (certificado de segurança)
     }
   })
 )
@@ -79,11 +79,12 @@ app.use('/', authRoutes)
 
 app.get('/', ToughtController.showTougths)
 
+const port = process.env.PORT || 3000
 
 conn
 //.sync({force: true})
 .sync()
 .then(() => {
-  app.listen(3000)
+  app.listen(port)
 })
 .catch((err) => console.log(err))
